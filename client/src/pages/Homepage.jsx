@@ -14,7 +14,7 @@ const Homepage = () => {
     return (
       <>
         {posts.length > 0 && posts.map(post => (
-          <Post {...post} />
+          <Post key={post.title} {...post} />
         ))}
       </>
     );
